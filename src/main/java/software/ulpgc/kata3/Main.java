@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        String filepath = "C:\\Users\\enriq\\IdeaProjects\\kata2\\src\\pruebas.tsv";
+        String filepath = "C:\\Users\\enriq\\IdeaProjects\\kata3\\src\\main\\resources\\pruebas.tsvCC";
 
         TitleLoader loader = new TsvTitleLoader(new File(filepath));
         List<Title> titles = loader.loadTitles();
