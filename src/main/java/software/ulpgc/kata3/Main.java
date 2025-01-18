@@ -18,6 +18,11 @@ public class Main {
         List<Title> titles = loader.loadTitles();
         TitleProcessor processor = new YearRangeTitleProcessor();
         Map<String,Integer> histogram = processor.processTitle(titles);
+        HistogramVisualizer visualizer = new HistogramVisualizer();
+        visualizer.displayHistogram(histogram,
+                "Distribuicion de Titulos por Rango de Años",
+                "Rango de Años",
+                "Frecuencia");
 
         System.out.println("Histograma de frecuencias por rango de años");
         for (Map.Entry<String,Integer> entry : histogram.entrySet()) {
